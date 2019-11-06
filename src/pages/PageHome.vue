@@ -17,6 +17,9 @@ export default {
       posts: sourceData.posts,
       users: sourceData.users
     }
+  },
+  mounted () {
+    console.log(sourceData)
   }
 }
 </script>
