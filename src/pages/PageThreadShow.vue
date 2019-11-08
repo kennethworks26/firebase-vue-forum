@@ -34,9 +34,8 @@ export default {
     }
   },
   methods: {
-    addPost (eventData) {
-      const post = eventData.post
-      const postId = eventData.post['.key']
+    addPost ({ post }) {
+      const postId = post['.key']
 
       // Add reactivity on added post
       this.$set(sourceData.posts, postId, post)
