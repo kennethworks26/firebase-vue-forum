@@ -33,10 +33,7 @@ export default {
   },
   methods: {
     save () {
-      const postId = 'greatPost' + Math.random()
-
       const post = {
-        '.key': postId,
         text: this.text,
         publishedAt: Math.floor(Date.now() / 1000),
         threadId: this.threadId,
@@ -46,6 +43,8 @@ export default {
       this.text = ''
 
       this.$emit('save', { post })
+
+      this.$store.dispatch('createPost', post)
     }
   }
 }
