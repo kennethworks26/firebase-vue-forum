@@ -12,6 +12,9 @@ import TheNavBar from '@/components/TheNavBar'
 export default {
   components: {
     TheNavBar
+  },
+  mounted () {
+    console.log(this.$store.state)
   }
 }
 </script>
