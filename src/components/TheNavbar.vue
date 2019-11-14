@@ -19,8 +19,9 @@
       <ul>
 
         <li class="navbar-user">
-          <a href="#">
-            <img class="avatar-small"
+          <router-link :to="{name: 'Profile'}">
+            <img class="
+            avatar-small"
               :src="user.avatar"
               alt="">
             <span>
@@ -29,7 +30,7 @@
                 src="../assets/img/arrow-profile.svg"
                 alt="">
             </span>
-          </a>
+          </router-link>
 
           <!-- dropdown menu -->
           <!-- add class "active-drop" to show the dropdown -->
