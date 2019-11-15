@@ -23,7 +23,7 @@ export default new Vuex.Store({
       commit('appendPostToUser', { userId: post.userId, postId })
     },
     updateUser ({ commit }, user) {
-      commit('setPost', { userId: user['.key'], user })
+      commit('setUser', { userId: user['.key'], user })
     }
   },
   mutations: {
